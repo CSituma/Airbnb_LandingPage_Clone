@@ -32,7 +32,7 @@ export default function SearchBar() {
   }, [showCalendar]);
 
   return (
-    <div className="mt-6 w-full max-w-4xl hidden md:block mx-auto p-[2px] box-border bg-white rounded-full border border-gray-200 ring-1 ring-gray-200 hover:ring-2 shadow-lg hover:shadow-xl transition-all relative z-20">
+    <div className="mt-6 w-full max-w-3xl hidden md:block mx-auto p-[2px] box-border bg-white rounded-full border border-gray-200 ring-1 ring-gray-200 hover:ring-2 shadow-lg hover:shadow-xl transition-all relative z-20">
       <div className="flex items-center justify-between text-sm text-gray-800 font-medium overflow-x-auto">
         
         {/* Where */}

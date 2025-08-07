@@ -442,11 +442,12 @@ export default function PropertySections() {
   );
 
   return (
-    <div className="mx-auto max-w-7xl lg:px-8 py-6 md:py-12">
+    <div className="mx-auto max-w-7xl lg:px-8 py-6 md:py-12 border-t border-gray-200 ">
       <ScrollableSection
         title="Popular homes in Los Angeles"
         properties={losAngelesProperties}
         scrollRef={losAngelesRef}
+        
       />
 
       <ScrollableSection
