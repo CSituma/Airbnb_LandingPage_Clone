@@ -20,11 +20,11 @@ export default function PropertyCard({
   isGuestFavorite = false,
 }: PropertyCardProps) {
   return (
-    <div className="group cursor-pointer w-[230px] flex-shrink-0">
+    <div className="group cursor-pointer w-[200px] flex-shrink-0">
       <div
         className="relative w-full mb-2 rounded-xl overflow-hidden border border-gray-200 bg-white"
         style={{
-          aspectRatio: "2.5/2",
+          aspectRatio: "2/2.1",
           height: "auto",
           boxShadow:
             "inset 0 1px 3px rgba(0, 0, 0, 0.08), 0 1px 3px rgba(0, 0, 0, 0.06)",

@@ -13,7 +13,7 @@ import Image from "next/image";
 
 // --- Icons --- //
 const HomeIcon = () => (
-  <svg width="40" height="40" viewBox="0 0 28 28" fill="none" className="h-12 w-12">
+  <svg width="25" height="25" viewBox="0 0 28 28" fill="none" className="h-8 w-8">
     <path d="M14 3L4 11.5V24H11V17H17V24H24V11.5L14 3Z" stroke="#717171" strokeWidth="2" fill="none" />
     <path d="M2 26H26" stroke="#717171" strokeWidth="2" strokeLinecap="round" />
     <path d="M5 26C5 26 5.5 25 6 24.5C6.5 24 7 24 7 24" stroke="#717171" strokeWidth="1.5" strokeLinecap="round" />
@@ -24,7 +24,7 @@ const HomeIcon = () => (
 );
 
 const ExperienceIcon = () => (
-  <svg width="40" height="40" viewBox="0 0 28 28" fill="none" className="h-12 w-12">
+  <svg width="25" height="25" viewBox="0 0 28 28" fill="none" className="h-8 w-8">
     <path d="M14 2C10 2 7 5.5 7 10C7 14.5 10 18 14 18C18 18 21 14.5 21 10C21 5.5 18 2 14 2Z" stroke="#717171" strokeWidth="2" fill="none" />
     <path d="M10 10C10 10 10.5 8 14 8C17.5 8 18 10 18 10" stroke="#717171" strokeWidth="1.5" />
     <path d="M10 13C10 13 10.5 15 14 15C17.5 15 18 13 18 13" stroke="#717171" strokeWidth="1.5" />
@@ -35,7 +35,7 @@ const ExperienceIcon = () => (
 );
 
 const ServicesIcon = () => (
-  <svg width="40" height="40" viewBox="0 0 28 28" fill="none" className="h-12 w-12">
+  <svg width="25" height="25" viewBox="0 0 28 28" fill="none"className="h-8 w-8">
     <path d="M14 4C14 2.89543 14.8954 2 16 2C17.1046 2 18 2.89543 18 4" stroke="#717171" strokeWidth="2" strokeLinecap="round" />
     <path d="M16 4V6" stroke="#717171" strokeWidth="2" />
     <path d="M6 20H26C26 20 26 12 21 8C18.5 6 16 6 16 6H14C14 6 11.5 6 9 8C4 12 4 20 4 20H6Z" stroke="#717171" strokeWidth="2" fill="none" />
@@ -122,7 +122,7 @@ export default function Header() {
             </div>
 
             {/* Center Nav */}
-            <nav className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 flex items-center space-x-14">
+            <nav className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 flex items-center space-x-6">
               {/* Homes */}
               <div className="flex items-center space-x-2 cursor-pointer group">
                 <div className="group-hover:scale-105 transition-transform"><HomeIcon /></div>
