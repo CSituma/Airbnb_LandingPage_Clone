@@ -47,21 +47,22 @@ export default function PropertyCard({
           </div>
         )}
       </div>
-
-      <div className="space-y-0.5">
+      <div className="space-y-1">
         <div className="flex items-start justify-between">
           <h3 className="font-medium text-gray-900 text-sm leading-tight truncate pr-2 flex-1">
             {title}
           </h3>
-          <div className="flex items-center space-x-1 ml-2 flex-shrink-0">
-            <Star className="h-3 w-3 fill-black text-black" />
-            <span className="text-xs text-gray-900 font-medium">{rating}</span>
+        </div>
+
+        <div className="flex items-center justify-between px-2">
+          <p className="text-sm text-neutral-500">
+            <span className=" text-gray-600">{price}</span> 
+          </p>
+          <div className="flex items-center flex-shrink-0">
+            <Star className="h-3 w-3 fill-gray-600" />
+            <span className="text-xs text-gray-600 font-medium">{rating}</span>
           </div>
         </div>
-        <p className="text-gray-500 text-sm leading-tight">{location}</p>
-        <p className="text-gray-900 text-sm leading-tight">
-          <span className="font-semibold">{price}</span>
-        </p>
       </div>
     </div>
   );
