@@ -37,7 +37,7 @@ export default function SearchBar() {
         
         {/* Where */}
         <div className="flex flex-col px-6 py-2 flex-[2] min-w-[200px]">
-          <span className="text-sm text-gray-700 font-semibold mb-1">Where</span>
+          <span className="text-sm  font-semibold mb-1">Where</span>
           <input
             type="text"
             placeholder="Search destinations"
@@ -55,7 +55,7 @@ export default function SearchBar() {
           className="relative flex flex-col justify-center items-start px-6 py-2 flex-[1] cursor-pointer"
           onClick={() => setShowCalendar(true)}
         >
-          <span className="text-sm text-gray-700 font-semibold mb-1">Check in</span>
+          <span className="text-sm font-semibold mb-1">Check in</span>
           <span className="text-sm text-gray-600">
             {format(dateRange[0].startDate, 'MMM d')}
           </span>
@@ -69,7 +69,7 @@ export default function SearchBar() {
           className="relative flex flex-col justify-center items-start px-6 py-2 flex-[1] cursor-pointer"
           onClick={() => setShowCalendar(true)}
         >
-          <span className="text-sm text-gray-700 font-semibold mb-1">Check out</span>
+          <span className="text-sm font-semibold mb-1">Check out</span>
           <span className="text-sm text-gray-600">
             {format(dateRange[0].endDate, 'MMM d')}
           </span>
