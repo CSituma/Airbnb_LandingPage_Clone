@@ -32,70 +32,69 @@ export default function SearchBar() {
   }, [showCalendar]);
 
   return (
-    <div className="mt-6 w-full max-w-4xl hidden md:block mx-auto p-[6px] box-border bg-white rounded-full border border-gray-200 ring-1 ring-gray-200 hover:ring-2 shadow-lg hover:shadow-xl transition-all relative z-20">
-      <div className="flex items-center justify-between text-xs text-gray-800 font-medium overflow-x-auto">
-
+    <div className="mt-6 w-full max-w-4xl hidden md:block mx-auto p-[5px] box-border bg-white rounded-full border border-gray-200 ring-1 ring-gray-200 hover:ring-2 shadow-lg hover:shadow-xl transition-all relative z-20">
+      <div className="flex items-center justify-between text-sm text-gray-800 font-medium overflow-x-auto">
+        
         {/* Where */}
-        <div className="flex flex-col px-2 py-1 flex-[2] min-w-[200px]">
-          <span className="text-xs text-gray-700 font-semibold mb-0.5">Where</span>
+        <div className="flex flex-col px-6 py-2 flex-[2] min-w-[200px]">
+          <span className="text-sm text-gray-700 font-semibold mb-1">Where</span>
           <input
             type="text"
             placeholder="Search destinations"
             value={location}
             onChange={(e) => setLocation(e.target.value)}
-            className="bg-transparent outline-none placeholder-gray-500 text-xs"
+            className="bg-transparent outline-none placeholder-gray-500 text-sm"
           />
         </div>
 
         {/* Divider */}
-        <div className="h-6 w-px bg-gray-300 mx-0.5" />
+        <div className="h-8 w-[2px] bg-gray-300 mx-1" />
 
         {/* Check in */}
         <div
-          className="relative flex flex-col justify-center items-start px-2 py-1 flex-[1] cursor-pointer"
+          className="relative flex flex-col justify-center items-start px-6 py-2 flex-[1] cursor-pointer"
           onClick={() => setShowCalendar(true)}
         >
-          <span className="text-xs text-gray-700 font-semibold mb-0.5">Check in</span>
-          <span className="text-xs text-gray-600">
+          <span className="text-sm text-gray-700 font-semibold mb-1">Check in</span>
+          <span className="text-sm text-gray-600">
             {format(dateRange[0].startDate, 'MMM d')}
           </span>
         </div>
 
         {/* Divider */}
-        <div className="h-6 w-px bg-gray-300 mx-0.5" />
+        <div className="h-8 w-[2px] bg-gray-300 mx-1" />
 
         {/* Check out */}
         <div
-          className="relative flex flex-col justify-center items-start px-2 py-1 flex-[1] cursor-pointer"
+          className="relative flex flex-col justify-center items-start px-6 py-2 flex-[1] cursor-pointer"
           onClick={() => setShowCalendar(true)}
         >
-          <span className="text-xs text-gray-700 font-semibold mb-0.5">Check out</span>
-          <span className="text-xs text-gray-600">
+          <span className="text-sm text-gray-700 font-semibold mb-1">Check out</span>
+          <span className="text-sm text-gray-600">
             {format(dateRange[0].endDate, 'MMM d')}
           </span>
         </div>
 
         {/* Divider */}
-        <div className="h-6 w-px bg-gray-300 mx-0.5" />
-
+        <div className="h-8 w-[2px] bg-gray-300 mx-1" />
         {/* Who */}
-        <div className="flex items-center justify-between px-2 py-1 flex-[1.2] min-w-[150px]">
+        <div className="flex items-center justify-between px-6 py-2 flex-[1.2] min-w-[150px]">
           <div>
-            <span className="text-xs text-gray-700 font-semibold mb-0.5 block">Who</span>
-            <span className="text-xs text-gray-600">
+            <span className="text-sm text-gray-700 font-semibold mb-1 block">Who</span>
+            <span className="text-sm text-gray-600">
               {guests} guest{guests > 1 ? 's' : ''}
             </span>
           </div>
           <div className="flex items-center space-x-1">
             <button
               onClick={() => setGuests((g) => Math.max(1, g - 1))}
-              className="w-5 h-5 rounded-full border text-gray-700 flex items-center justify-center hover:bg-gray-100"
+              className="w-6 h-6 rounded-full border text-gray-700 flex items-center justify-center hover:bg-gray-100"
             >
               <Minus className="h-3 w-3" />
             </button>
             <button
               onClick={() => setGuests((g) => g + 1)}
-              className="w-5 h-5 rounded-full border text-gray-700 flex items-center justify-center hover:bg-gray-100"
+              className="w-6 h-6 rounded-full border text-gray-700 flex items-center justify-center hover:bg-gray-100"
             >
               <Plus className="h-3 w-3" />
             </button>
@@ -103,9 +102,9 @@ export default function SearchBar() {
         </div>
 
         {/* Search button */}
-        <div className="pl-2 pr-3">
-          <button className="bg-[#FF385C] hover:bg-[#E31C5F] text-white p-1.5 rounded-full">
-            <Search className="h-3.5 w-3.5" />
+        <div className="pl-3 pr-4">
+          <button className="bg-[#FF385C] hover:bg-[#E31C5F] text-white p-2 rounded-full">
+            <Search className="h-4 w-4" />
           </button>
         </div>
       </div>
