@@ -14,7 +14,6 @@ interface PropertyCardProps {
 export default function PropertyCard({
   image,
   title,
-  location,
   price,
   rating,
   isGuestFavorite = false,
@@ -34,7 +33,7 @@ export default function PropertyCard({
           src={image}
           alt={title}
           fill
-          className="object-cover transition-transform duration-300 group-hover:scale-105 border-radius-inner-xl"
+          className="object-cover transition-transform duration-300 group-hover:scale-105 borderRadius-lg"
         />
         <button className="absolute top-2 right-2 p-1 hover:scale-110 transition-transform">
           <Heart className="h-5 w-5 text-white fill-black/20 hover:fill-red-500 hover:text-red-500 stroke-2" />
